@@ -632,9 +632,11 @@ body.has-mobile-bar {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem 1rem;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
   text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .stat-value {
@@ -653,10 +655,14 @@ body.has-mobile-bar {
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .stats-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1rem;
   }
+}
+
+@media (min-width: 768px) {
   .stat-value {
     font-size: 2.75rem;
   }
