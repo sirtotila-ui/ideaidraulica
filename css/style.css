@@ -816,6 +816,23 @@ body.has-mobile-bar {
 }
 
 /* ---------- Gallery ---------- */
+.gallery-subheading {
+  position: relative;
+  font-size: 1.25rem;
+  color: var(--text);
+  margin: 0 0 1.25rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary);
+}
+
+.gallery-subheading + .gallery-grid {
+  margin-bottom: 2.5rem;
+}
+
+.gallery-grid + .gallery-subheading {
+  margin-top: 1rem;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr;
