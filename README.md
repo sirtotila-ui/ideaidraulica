@@ -13,7 +13,6 @@ ideaidraulica/
   img/
     logo.svg          logo (usato anche come favicon)
     hero.png          immagine hero (bagno / lavoro)
-    about.svg         placeholder foto "chi siamo"
     gallery/
       placeholder.svg placeholder foto galleria (9 copie in index.html)
   robots.txt          per i motori di ricerca
@@ -55,7 +54,7 @@ Tutto il testo da sostituire e' marcato con doppie parentesi graffe, tipo
 2. Hero: sostituire `img/hero.png` con una foto 1200x1500 circa (anche verticale va bene),
    preferibilmente in formato `.webp` o `.jpg` (ricorda di aggiornare l'estensione
    nel tag `<img src>`).
-3. About: stesso procedimento con `img/about.svg`.
+3. Chi siamo: solo testo (nessuna immagine obbligatoria).
 4. Galleria: sostituire i 9 riferimenti a `img/gallery/placeholder.svg` in
    `index.html` con i nomi dei tuoi file (es. `img/gallery/01.jpg`, `02.jpg`,
    `...`) e caricare le foto nella cartella `img/gallery/`.

@@ -667,24 +667,9 @@ body.has-mobile-bar {
   background: #fff;
 }
 
-.about-grid {
-  display: grid;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.about-media {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  aspect-ratio: 4/3;
-  background: var(--primary-light);
-}
-
-.about-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .about h2 {
@@ -720,13 +705,6 @@ body.has-mobile-bar {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-}
-
-@media (min-width: 1024px) {
-  .about-grid {
-    grid-template-columns: 1fr 1.1fr;
-    gap: 4rem;
-  }
 }
 
 /* ---------- Services ---------- */
