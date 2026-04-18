@@ -611,6 +611,11 @@ body.has-mobile-bar {
   .hero-media {
     max-width: none;
   }
+
+  /* CTA duplicate: su mobile ci sono gia' Chiama/WhatsApp nella barra fissa in basso */
+  .hero-ctas {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
