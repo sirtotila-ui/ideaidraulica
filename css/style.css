@@ -611,10 +611,18 @@ body.has-mobile-bar {
   .hero-media {
     max-width: none;
   }
+}
 
-  /* CTA duplicate: su mobile ci sono gia' Chiama/WhatsApp nella barra fissa in basso */
-  .hero-ctas {
-    display: none;
+/* CTA hero nascoste su tablet/phone: stessi contatti nella barra fissa in basso */
+@media (max-width: 1024px) {
+  .hero .hero-ctas {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero .hero-ctas {
+    display: flex !important;
   }
 }
 
@@ -633,19 +641,16 @@ body.has-mobile-bar {
   padding: 2.5rem 0;
   background: var(--primary);
   color: #fff;
-  text-align: center;
 }
 
-/* Mobile / tablet stretti: colonna unica centrata (niente griglia 2+1) */
 .stats-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.75rem;
+  display: grid;
+  /* Mobile: 2 in alto, la terza riga centrata sotto */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 0.75rem;
   width: 100%;
-  max-width: 28rem;
   margin-inline: auto;
+  justify-items: center;
 }
 
 .stats-grid > div {
@@ -655,6 +660,13 @@ body.has-mobile-bar {
   justify-content: center;
   text-align: center;
   width: 100%;
+  max-width: 100%;
+}
+
+.stats-grid > div:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: min(100%, 280px);
 }
 
 .stat-value {
@@ -673,14 +685,17 @@ body.has-mobile-bar {
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .stats-grid {
-    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem 1.5rem;
-    align-items: start;
+    gap: 1.5rem 1.25rem;
+    align-items: center;
+  }
+
+  .stats-grid > div:nth-child(3) {
+    grid-column: auto;
+    justify-self: stretch;
     max-width: none;
-    width: 100%;
   }
 
   .stats-grid > div {
