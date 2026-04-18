@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" role="img" aria-label="Placeholder foto galleria">
+  <defs>
+    <linearGradient id="gp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6F2FB"/>
+      <stop offset="100%" stop-color="#0A84D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#gp)"/>
+  <g transform="translate(300 200)" fill="#ffffff" opacity="0.9">
+    <path d="M 0 -70 C 35 -15 55 10 55 30 a 55 55 0 1 1 -110 0 C -55 10 -35 -15 0 -70 z"/>
+  </g>
+  <text x="300" y="340" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#0663A3" font-weight="600" opacity="0.9">
+    Foto lavoro idraulico
+  </text>
+  <text x="300" y="365" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#0663A3" opacity="0.7">
+    Sostituire con foto reale
+  </text>
+</svg>
