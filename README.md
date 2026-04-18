@@ -12,7 +12,7 @@ ideaidraulica/
   js/script.js        menu mobile, dropdown desktop, lightbox galleria, counter
   img/
     logo.svg          logo (usato anche come favicon)
-    hero.svg          placeholder immagine hero
+    hero.png          immagine hero (bagno / lavoro)
     about.svg         placeholder foto "chi siamo"
     gallery/
       placeholder.svg placeholder foto galleria (9 copie in index.html)
@@ -52,7 +52,7 @@ Tutto il testo da sostituire e' marcato con doppie parentesi graffe, tipo
 
 1. Logo: sostituire `img/logo.svg` con il logo reale (mantieni il formato SVG
    o usa PNG quadrato almeno 256x256).
-2. Hero: sostituire `img/hero.svg` con una foto orizzontale 1200x900 circa,
+2. Hero: sostituire `img/hero.png` con una foto 1200x1500 circa (anche verticale va bene),
    preferibilmente in formato `.webp` o `.jpg` (ricorda di aggiornare l'estensione
    nel tag `<img src>`).
 3. About: stesso procedimento con `img/about.svg`.
