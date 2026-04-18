@@ -634,9 +634,19 @@ body.has-mobile-bar {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.75rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.stats-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
+  margin-inline: auto;
 }
 
 .stat-value {
@@ -657,8 +667,14 @@ body.has-mobile-bar {
 
 @media (min-width: 640px) {
   .stats-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem 1.25rem;
+    align-items: center;
+  }
+
+  .stats-grid > div {
+    max-width: none;
+    width: 100%;
   }
 }
 
