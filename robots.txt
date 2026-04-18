@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.esempio.it/sitemap.xml
+Sitemap: https://ideaidraulica.vercel.app/sitemap.xml
