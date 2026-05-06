@@ -90,6 +90,7 @@ h3 {
 
 p {
   color: var(--muted);
+  letter-spacing: 0.01em;
 }
 
 ul {
@@ -579,6 +580,7 @@ body.has-mobile-bar {
 .hero .lead {
   margin-top: 1rem;
   font-size: 1.125rem;
+  line-height: 1.72;
   max-width: 540px;
 }
 
@@ -859,24 +861,25 @@ body.has-mobile-bar {
 .gallery-subheading {
   position: relative;
   font-size: 1.25rem;
+  letter-spacing: 0.015em;
   color: var(--text);
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.5rem;
   padding-left: 1rem;
   border-left: 4px solid var(--primary);
 }
 
 .gallery-subheading + .gallery-grid {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .gallery-grid + .gallery-subheading {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.875rem;
+  gap: 1.1rem;
 }
 
 .gallery-item {
